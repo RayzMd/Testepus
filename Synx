@@ -1,0 +1,506 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Akeyscn = Instance.new("ScreenGui")
+local keybackg = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local bottongui = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local logsynix = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local select = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UICorner_3 = Instance.new("UICorner")
+local removebord = Instance.new("Frame")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local stroke1 = Instance.new("Frame")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local stroke2 = Instance.new("Frame")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local key_frame = Instance.new("Frame")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local TextBox = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local getkeyTEXT = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local checkey_button = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local checkeyTEXT = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local getkey_button = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
+local keyversion = Instance.new("TextLabel")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_17 = Instance.new("UIAspectRatioConstraint")
+local backg_user = Instance.new("Frame")
+local PlayerName = Instance.new("TextLabel")
+local PlayerThumb = Instance.new("ImageLabel")
+local UICorner_8 = Instance.new("UICorner")
+local UIAspectRatioConstraint_18 = Instance.new("UIAspectRatioConstraint")
+local backg_photo = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+local backg_deletgui = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local UIAspectRatioConstraint_19 = Instance.new("UIAspectRatioConstraint")
+local stroke_deletgui = Instance.new("Frame")
+local UIAspectRatioConstraint_20 = Instance.new("UIAspectRatioConstraint")
+local ImageButton = Instance.new("ImageButton")
+local UIAspectRatioConstraint_21 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Akeyscn.Name = "Akeyscn"
+Akeyscn.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Akeyscn.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+keybackg.Name = "keybackg"
+keybackg.Parent = Akeyscn
+keybackg.AnchorPoint = Vector2.new(0.5, 0.5)
+keybackg.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+keybackg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keybackg.BorderSizePixel = 0
+keybackg.Position = UDim2.new(0.5, 0, 0.5, 0)
+keybackg.Size = UDim2.new(0.581818163, 0, 0.704978049, 0)
+
+UICorner.Parent = keybackg
+
+UIAspectRatioConstraint.Parent = keybackg
+UIAspectRatioConstraint.AspectRatio = 1.794
+
+bottongui.Name = "bottongui"
+bottongui.Parent = keybackg
+bottongui.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+bottongui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bottongui.BorderSizePixel = 0
+bottongui.Position = UDim2.new(-0.000978522818, 0, -4.91513638e-05, 0)
+bottongui.Size = UDim2.new(0.310763896, 0, 1, 0)
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = bottongui
+
+UIAspectRatioConstraint_2.Parent = bottongui
+UIAspectRatioConstraint_2.AspectRatio = 0.558
+
+logsynix.Name = "logsynix"
+logsynix.Parent = bottongui
+logsynix.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+logsynix.BackgroundTransparency = 1.000
+logsynix.BorderColor3 = Color3.fromRGB(0, 0, 0)
+logsynix.BorderSizePixel = 0
+logsynix.Position = UDim2.new(0.251396656, 0, 0.0280373823, 0)
+logsynix.Size = UDim2.new(0.491620123, 0, 0.267912775, 0)
+logsynix.Image = "rbxassetid://14862323455"
+
+UIAspectRatioConstraint_3.Parent = logsynix
+UIAspectRatioConstraint_3.AspectRatio = 1.023
+
+select.Name = "select"
+select.Parent = bottongui
+select.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+select.BackgroundTransparency = 0.950
+select.BorderColor3 = Color3.fromRGB(0, 0, 0)
+select.BorderSizePixel = 0
+select.Position = UDim2.new(0.0167597774, 0, 0.418218881, 0)
+select.Size = UDim2.new(0.966480434, 0, 0.127725855, 0)
+
+ImageLabel.Parent = select
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.396454215, 0, 0.047089044, 0)
+ImageLabel.Rotation = 9.000
+ImageLabel.Size = UDim2.new(0.189944133, 0, 0.902438998, 0)
+ImageLabel.Image = "rbxassetid://15133995245"
+
+UIAspectRatioConstraint_4.Parent = ImageLabel
+UIAspectRatioConstraint_4.AspectRatio = 0.919
+
+UIAspectRatioConstraint_5.Parent = select
+UIAspectRatioConstraint_5.AspectRatio = 4.366
+
+UICorner_3.Parent = select
+
+removebord.Name = "removebord"
+removebord.Parent = bottongui
+removebord.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+removebord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+removebord.BorderSizePixel = 0
+removebord.Position = UDim2.new(0.966480434, 0, 4.75351669e-08, 0)
+removebord.Size = UDim2.new(0.0335195549, 0, 1, 0)
+removebord.ZIndex = 0
+
+UIAspectRatioConstraint_6.Parent = removebord
+UIAspectRatioConstraint_6.AspectRatio = 0.019
+
+stroke1.Name = "stroke1"
+stroke1.Parent = keybackg
+stroke1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stroke1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+stroke1.BorderSizePixel = 0
+stroke1.Position = UDim2.new(0.309027791, 0, -0.0031152172, 0)
+stroke1.Size = UDim2.new(0.00173611112, 0, 1, 0)
+stroke1.ZIndex = 2
+
+UIAspectRatioConstraint_7.Parent = stroke1
+UIAspectRatioConstraint_7.AspectRatio = 0.003
+
+stroke2.Name = "stroke2"
+stroke2.Parent = keybackg
+stroke2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stroke2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+stroke2.BorderSizePixel = 0
+stroke2.Position = UDim2.new(-3.07096535e-08, 0, 0.833402634, 0)
+stroke2.Size = UDim2.new(0.310763896, 0, 0.0031152647, 0)
+
+UIAspectRatioConstraint_8.Parent = stroke2
+UIAspectRatioConstraint_8.AspectRatio = 179.000
+
+key_frame.Name = "key_frame"
+key_frame.Parent = keybackg
+key_frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+key_frame.BackgroundTransparency = 1.000
+key_frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+key_frame.BorderSizePixel = 0
+key_frame.Position = UDim2.new(0.310763896, 0, 0.0031152647, 0)
+key_frame.Size = UDim2.new(0.689236104, 0, 0.993769467, 0)
+
+UIAspectRatioConstraint_9.Parent = key_frame
+UIAspectRatioConstraint_9.AspectRatio = 1.245
+
+UICorner_4.Parent = key_frame
+
+TextLabel.Parent = key_frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0206700098, 0, 0.217134774, 0)
+TextLabel.Size = UDim2.new(0.591939569, 0, 0.0940438882, 0)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "join our discord to get the key"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 65
+
+UIAspectRatioConstraint_10.Parent = TextLabel
+UIAspectRatioConstraint_10.AspectRatio = 10.000
+
+TextBox.Parent = key_frame
+TextBox.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0377833769, 0, 0.310344815, 0)
+TextBox.Size = UDim2.new(0.921914339, 0, 0.156739816, 0)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.Text = "KEY"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 28.000
+TextBox.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = TextBox
+
+UIAspectRatioConstraint_11.Parent = TextBox
+UIAspectRatioConstraint_11.AspectRatio = 7.320
+
+UITextSizeConstraint_2.Parent = TextBox
+UITextSizeConstraint_2.MaxTextSize = 40
+
+getkeyTEXT.Name = "getkeyTEXT"
+getkeyTEXT.Parent = key_frame
+getkeyTEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+getkeyTEXT.BackgroundTransparency = 1.000
+getkeyTEXT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+getkeyTEXT.BorderSizePixel = 0
+getkeyTEXT.Position = UDim2.new(-0.0516323298, 0, 0.547677755, 0)
+getkeyTEXT.Size = UDim2.new(0.591939569, 0, 0.0940438882, 0)
+getkeyTEXT.ZIndex = 2
+getkeyTEXT.Font = Enum.Font.SourceSansBold
+getkeyTEXT.Text = "GET KEY"
+getkeyTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+getkeyTEXT.TextScaled = true
+getkeyTEXT.TextSize = 14.000
+getkeyTEXT.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = getkeyTEXT
+UITextSizeConstraint_3.MaxTextSize = 65
+
+UIAspectRatioConstraint_12.Parent = getkeyTEXT
+UIAspectRatioConstraint_12.AspectRatio = 10.000
+
+checkey_button.Name = "checkey_button"
+checkey_button.Parent = key_frame
+checkey_button.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+checkey_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+checkey_button.BorderSizePixel = 0
+checkey_button.Position = UDim2.new(0.538474858, 0, 0.516329944, 0)
+checkey_button.Size = UDim2.new(0.415617138, 0, 0.137931034, 0)
+checkey_button.Font = Enum.Font.SourceSansBold
+checkey_button.Text = ""
+checkey_button.TextColor3 = Color3.fromRGB(255, 255, 255)
+checkey_button.TextScaled = true
+checkey_button.TextSize = 1.000
+checkey_button.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = checkey_button
+
+UIAspectRatioConstraint_13.Parent = checkey_button
+UIAspectRatioConstraint_13.AspectRatio = 4.000
+
+checkeyTEXT.Name = "checkeyTEXT"
+checkeyTEXT.Parent = key_frame
+checkeyTEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+checkeyTEXT.BackgroundTransparency = 1.000
+checkeyTEXT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+checkeyTEXT.BorderSizePixel = 0
+checkeyTEXT.Position = UDim2.new(0.449059039, 0, 0.543631494, 0)
+checkeyTEXT.Size = UDim2.new(0.591939569, 0, 0.0940438882, 0)
+checkeyTEXT.Font = Enum.Font.SourceSansBold
+checkeyTEXT.Text = "CHECK KEY"
+checkeyTEXT.TextColor3 = Color3.fromRGB(57, 198, 66)
+checkeyTEXT.TextScaled = true
+checkeyTEXT.TextSize = 14.000
+checkeyTEXT.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = checkeyTEXT
+UITextSizeConstraint_4.MaxTextSize = 65
+
+UIAspectRatioConstraint_14.Parent = checkeyTEXT
+UIAspectRatioConstraint_14.AspectRatio = 10.000
+
+getkey_button.Name = "getkey_button"
+getkey_button.Parent = key_frame
+getkey_button.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+getkey_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+getkey_button.BorderSizePixel = 0
+getkey_button.Position = UDim2.new(0.0377833769, 0, 0.520376146, 0)
+getkey_button.Size = UDim2.new(0.415617138, 0, 0.137931034, 0)
+getkey_button.Font = Enum.Font.SourceSansBold
+getkey_button.Text = ""
+getkey_button.TextColor3 = Color3.fromRGB(255, 255, 255)
+getkey_button.TextScaled = true
+getkey_button.TextSize = 1.000
+getkey_button.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = getkey_button
+
+UIAspectRatioConstraint_15.Parent = getkey_button
+UIAspectRatioConstraint_15.AspectRatio = 4.000
+
+TextLabel_2.Parent = key_frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.0448254645, 0, 0.102823883, 0)
+TextLabel_2.Size = UDim2.new(0.584005356, 0, 0.156041265, 0)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "SyniX - KEY"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 38.000
+TextLabel_2.TextWrapped = true
+
+UITextSizeConstraint_5.Parent = TextLabel_2
+
+UIAspectRatioConstraint_16.Parent = TextLabel_2
+UIAspectRatioConstraint_16.AspectRatio = 6.061
+
+keyversion.Name = "keyversion"
+keyversion.Parent = key_frame
+keyversion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keyversion.BackgroundTransparency = 1.000
+keyversion.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keyversion.BorderSizePixel = 0
+keyversion.Position = UDim2.new(0.175469115, 0, 0.92618072, 0)
+keyversion.Size = UDim2.new(0.591939569, 0, 0.0940438882, 0)
+keyversion.Font = Enum.Font.SourceSansBold
+keyversion.Text = " v0.0.3"
+keyversion.TextColor3 = Color3.fromRGB(255, 255, 255)
+keyversion.TextScaled = true
+keyversion.TextSize = 14.000
+keyversion.TextTransparency = 0.920
+keyversion.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = keyversion
+UITextSizeConstraint_6.MaxTextSize = 65
+
+UIAspectRatioConstraint_17.Parent = keyversion
+UIAspectRatioConstraint_17.AspectRatio = 10.000
+
+backg_user.Name = "backg_user"
+backg_user.Parent = keybackg
+backg_user.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+backg_user.BackgroundTransparency = 0.750
+backg_user.BorderColor3 = Color3.fromRGB(0, 0, 0)
+backg_user.BorderSizePixel = 0
+backg_user.Position = UDim2.new(0.00173611112, 0, 0.838395655, 0)
+backg_user.Size = UDim2.new(0.309027791, 0, 0.164719626, 0)
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = backg_user
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(0.296990544, 0, 0.26269111, 0)
+PlayerName.Size = UDim2.new(0.413326144, 0, 0.469205827, 0)
+PlayerName.Font = Enum.Font.GothamBold
+PlayerName.Text = ""
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+PlayerName.TextXAlignment = Enum.TextXAlignment.Left
+
+PlayerThumb.Name = "PlayerThumb"
+PlayerThumb.Parent = backg_user
+PlayerThumb.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PlayerThumb.BackgroundTransparency = 0.800
+PlayerThumb.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PlayerThumb.Position = UDim2.new(0, 5, 0.0989999995, 0)
+PlayerThumb.Size = UDim2.new(0.230000004, 0, 0.800000012, 0)
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = PlayerThumb
+
+UIAspectRatioConstraint_18.Parent = backg_user
+UIAspectRatioConstraint_18.AspectRatio = 3.490
+
+backg_photo.Name = "backg_photo"
+backg_photo.Parent = backg_user
+backg_photo.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+backg_photo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+backg_photo.BorderSizePixel = 0
+backg_photo.Position = UDim2.new(0, 5, 0.0989999995, 0)
+backg_photo.Size = UDim2.new(0.230000004, 0, 0.800000012, 0)
+backg_photo.ZIndex = 0
+
+UICorner_9.CornerRadius = UDim.new(1, 0)
+UICorner_9.Parent = backg_photo
+
+UICorner_10.Parent = backg_user
+
+backg_deletgui.Name = "backg_deletgui"
+backg_deletgui.Parent = keybackg
+backg_deletgui.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+backg_deletgui.BackgroundTransparency = 0.600
+backg_deletgui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+backg_deletgui.BorderSizePixel = 0
+backg_deletgui.Position = UDim2.new(0.859375, 0, 0.0249221176, 0)
+backg_deletgui.Size = UDim2.new(0.123263888, 0, 0.0996884704, 0)
+
+UICorner_11.Parent = backg_deletgui
+
+UIAspectRatioConstraint_19.Parent = backg_deletgui
+UIAspectRatioConstraint_19.AspectRatio = 2.219
+
+stroke_deletgui.Name = "stroke_deletgui"
+stroke_deletgui.Parent = backg_deletgui
+stroke_deletgui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stroke_deletgui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+stroke_deletgui.BorderSizePixel = 0
+stroke_deletgui.Position = UDim2.new(0.478873283, 0, 0, 0)
+stroke_deletgui.Size = UDim2.new(0.0140845086, 0, 1.00000012, 0)
+
+UIAspectRatioConstraint_20.Parent = stroke_deletgui
+UIAspectRatioConstraint_20.AspectRatio = 0.031
+
+ImageButton.Parent = keybackg
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.932291687, 0, 0.0436137058, 0)
+ImageButton.Size = UDim2.new(0.0347222239, 0, 0.0623052977, 0)
+ImageButton.Image = "rbxassetid://15118127854"
+ImageButton.ImageColor3 = Color3.fromRGB(168, 25, 0)
+ImageButton.ImageTransparency = 0.250
+
+UIAspectRatioConstraint_21.Parent = ImageButton
+
+-- Scripts:
+
+local function VEBXRFY_fake_script() -- backg_user.LocalScript 
+	local script = Instance.new('LocalScript', backg_user)
+
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character or Player.CharacterAdded:wait()
+	local UserInputService = game:GetService("UserInputService")
+	
+	local Stamina = 100
+	local Running = false
+	local SprintSpeed = 30
+	local WalkSpeed = 16 
+	
+	script.Parent.PlayerName.Text = Player.Name
+	script.Parent.PlayerThumb.Image = "rbxthumb://type=AvatarHeadShot&id=" ..Player.UserId.. "&w=420&h=420"
+	
+	Character:WaitForChild("Humanoid"):GetPropertyChangedSignal("Health"):connect(function()
+		script.Parent.HealthBar.Bar.Size = UDim2.new(math.floor(Character.Humanoid.Health) / 100, 0, 1, 0)
+	end)
+	
+	UserInputService.InputBegan:Connect(function(key)
+		if key.KeyCode == Enum.KeyCode.LeftShift then
+			Running = true
+			Character.Humanoid.WalkSpeed = SprintSpeed
+			while Stamina > 0 and Running do
+				Stamina -= 1
+				--print(Stamina)
+				if Stamina == 0 then
+					script.Parent.StaminaBar.Bar.Visible = false
+				else
+					script.Parent.StaminaBar.Bar:TweenSize(UDim2.new(Stamina / 100, 0, 1, 0), "Out", "Linear", 0)
+				end
+				wait()
+				if Stamina == 0 then
+					Character.Humanoid.WalkSpeed = WalkSpeed
+				end
+			end
+		end 
+	end)
+	
+	UserInputService.InputEnded:Connect(function(key)
+		if key.KeyCode == Enum.KeyCode.LeftShift then
+			Running = false
+			Character.Humanoid.WalkSpeed = WalkSpeed
+			while Stamina < 100 and not Running do
+				script.Parent.StaminaBar.Bar.Visible = true
+				Stamina += 1
+				--print(Stamina)
+				script.Parent.StaminaBar.Bar:TweenSize(UDim2.new(Stamina / 100, 0, 1, 0), "Out", "Linear", 0)
+				wait()
+				if Stamina == 0 then
+					Character.Humanoid.WalkSpeed = WalkSpeed
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(VEBXRFY_fake_script)()

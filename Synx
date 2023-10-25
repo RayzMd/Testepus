@@ -95,7 +95,7 @@ bottongui.BorderSizePixel = 0
 bottongui.Position = UDim2.new(-0.000978522818, 0, -4.91513638e-05, 0)
 bottongui.Size = UDim2.new(0.310763896, 0, 1, 0)
 
-UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.CornerRadius = UDim.new(0, 8)
 UICorner_2.Parent = bottongui
 
 UIAspectRatioConstraint_2.Parent = bottongui

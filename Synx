@@ -52,6 +52,7 @@ local keyversion = Instance.new("TextLabel")
 local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local UIAspectRatioConstraint_17 = Instance.new("UIAspectRatioConstraint")
 local backg_user = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
 local PlayerName = Instance.new("TextLabel")
 local PlayerThumb = Instance.new("ImageLabel")
 local UICorner_8 = Instance.new("UICorner")
@@ -364,6 +365,12 @@ backg_user.BorderColor3 = Color3.fromRGB(0, 0, 0)
 backg_user.BorderSizePixel = 0
 backg_user.Position = UDim2.new(0.00173611112, 0, 0.838395655, 0)
 backg_user.Size = UDim2.new(0.309027791, 0, 0.164719626, 0)
+
+UICorner_13.Parent = backg_user
+
+UIAspectRatioConstraint.Parent = backg_user
+UIAspectRatioConstraint.AspectRatio = 1.794
+
 
 PlayerName.Name = "PlayerName"
 PlayerName.Parent = backg_user
